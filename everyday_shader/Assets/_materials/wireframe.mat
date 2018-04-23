@@ -19,6 +19,6 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - _Emission: 0.13
+    - _Emission: 0
     m_Colors:
     - _Color: {r: 0, g: 0.9411765, b: 0.62961465, a: 1}
