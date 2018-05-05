@@ -10,6 +10,7 @@ public class NewBehaviourScript : MonoBehaviour {
 	float outtime = 6.5f;
 	float size = 0.2f;
 	float size_time = 4;
+	public Camera ca;
 
 	void Start () {
 		// ２秒後にFadeIn()を、５秒後にFadeOut()を呼び出す
@@ -37,6 +38,8 @@ public class NewBehaviourScript : MonoBehaviour {
 	void SetValue(float alpha) {
 		// iTweenで呼ばれたら、受け取った値をImageのアルファ値にセット
 		material.SetFloat("_Displacement", alpha);
+		material.color =  new Color(1*alpha/size,1*alpha/size,1*alpha/size);
+		ca.backgroundColor = new Color(1-1*alpha/size,1-1*alpha/size,1-1*alpha/size);
 	}
 
 	// Update is called once per frame
